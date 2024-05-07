@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="job_type_odoo_developer" model="job.type">
+            <field name="name">Odoo Developer</field>
+            <field name="description">Responsible for the Odoo development!</field>
+            <field name="min_amount">500000</field>
+            <field name="max_amount">1500000</field>
+        </record>
+    </data>
+</odoo>

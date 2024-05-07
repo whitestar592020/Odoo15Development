@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="employment_line_view_tree" model="ir.ui.view">
+            <field name="name">employment.line.tree</field>
+            <field name="model">employment.line</field>
+            <field name="arch" type="xml">
+                <tree create="0" delete="0">
+                    <field name="employment_id"/>
+                    <field name="company"/>
+                    <field name="responsibility"/>
+                    <field name="period_from"/>
+                    <field name="period_to"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_employment_line" model="ir.actions.act_window">
+            <field name="name">Employment Line</field>
+            <field name="res_model">employment.line</field>
+            <field name="view_mode">tree</field>
+            <field name="domain">[('standard_cv_id', '=', active_id)]</field>
+            <field name="context">{'group_by': ['employment_id']}</field>
+        </record>
+    </data>
+</odoo>

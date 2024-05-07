@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="cv_module_category" model="ir.module.category">
+            <field name="name">Curriculum Vitae</field>
+        </record>
+
+        <record id="cv_group_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="cv_module_category"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <record id="cv_group_manager" model="res.groups">
+            <field name="name">Administrator</field>
+            <field name="category_id" ref="cv_module_category"/>
+            <field name="implied_ids" eval="[(4, ref('cv_group_user'))]"/>
+        </record>
+    </data>
+</odoo>

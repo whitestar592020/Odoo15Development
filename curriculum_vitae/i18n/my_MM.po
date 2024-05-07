@@ -1,0 +1,725 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* curriculum_vitae
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-01 08:24+0000\n"
+"PO-Revision-Date: 2024-03-01 08:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: curriculum_vitae
+#: model:ir.actions.report,print_report_name:curriculum_vitae.standard_cv_report_pdf
+#: model:ir.actions.report,print_report_name:curriculum_vitae.standard_cv_report_xlsx
+msgid "\"Standard CV - %s\" % (object.name)"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__active
+msgid "Active"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:res.groups,name:curriculum_vitae.cv_group_manager
+msgid "Administrator"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__apply_job
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_calendar
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_pivot
+msgid "Apply Job"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Apply Job :"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.ui.menu,name:curriculum_vitae.root_menu_cv_form
+msgid "CV Form"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__age_info
+msgid "Career Age"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__image
+msgid "Career Image"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__name
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_calendar
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_pivot
+msgid "Career Name"
+msgstr "လျှောက်ထားသူ အမည်"
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__objective
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Career Objectives"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.act_window,name:curriculum_vitae.action_certificate
+#: model:ir.model,name:curriculum_vitae.model_certificate
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__name
+#: model:ir.ui.menu,name:curriculum_vitae.action_menu_certificate
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.certificate_view_form
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.certificate_view_tree
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Certificate"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__color
+msgid "Color"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__company
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__company
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Company"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.ui.menu,name:curriculum_vitae.first_level_menu_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Confirm"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields.selection,name:curriculum_vitae.selection__standard_cv__state__confirm
+msgid "Confirmed"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.actions.act_window,help:curriculum_vitae.action_standard_cv
+msgid "Create a new CV form!"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.actions.act_window,help:curriculum_vitae.action_certificate
+msgid "Create a new certificate!"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.actions.act_window,help:curriculum_vitae.action_employment
+msgid "Create a new employment!"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.actions.act_window,help:curriculum_vitae.action_job_type
+msgid "Create a new job type!"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__create_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__create_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__create_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__create_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__create_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__create_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__create_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__create_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__create_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__create_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_search
+msgid "Creation Date"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__currency_id
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__currency_id
+msgid "Currency Type"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__address
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Current Address"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.module.category,name:curriculum_vitae.cv_module_category
+#: model:ir.ui.menu,name:curriculum_vitae.first_level_menu_curriculum_vitae
+msgid "Curriculum Vitae"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__dob
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Date of Birth"
+msgstr ""
+
+#. module: curriculum_vitae
+#: code:addons/curriculum_vitae/models/standard_cv.py:0
+#, python-format
+msgid "Date of Birth is not set yet!"
+msgstr "မွေးဖွားသည့်ရက်စွဲကို မသတ်မှတ်ရသေးပါ။"
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_kanban
+msgid "Delete"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__description
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.job_type_view_form
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.job_type_view_tree
+msgid "Description"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__display_name
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__display_name
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__display_name
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__display_name
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__display_name
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model,name:curriculum_vitae.model_document
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__document_ids
+msgid "Document"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__file
+msgid "Document File"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__name
+msgid "Document Name"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Documents"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields.selection,name:curriculum_vitae.selection__standard_cv__state__done
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Done"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields.selection,name:curriculum_vitae.selection__standard_cv__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_kanban
+msgid "Dropdown menu"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_kanban
+msgid "Edit"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Education Background"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__education_center
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.certificate_view_form
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.certificate_view_tree
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Education Center"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__email
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Email"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.act_window,name:curriculum_vitae.action_employment
+#: model:ir.model,name:curriculum_vitae.model_employment
+#: model:ir.ui.menu,name:curriculum_vitae.action_menu_employment
+msgid "Employment"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__employment_count
+msgid "Employment Count"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Employment History"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.act_window,name:curriculum_vitae.action_employment_line
+#: model:ir.model,name:curriculum_vitae.model_employment_line
+msgid "Employment Line"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Employments"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__salary
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_calendar
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_graph
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_pivot
+msgid "Expect Salary"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Expect Salary :"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.ui.menu,name:curriculum_vitae.group_menu_extra_info
+msgid "Extra Info"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields.selection,name:curriculum_vitae.selection__standard_cv__gender__female
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_search
+msgid "Female"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__gender
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_calendar
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_pivot
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_search
+msgid "Gender"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__id
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__id
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__id
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__id
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__id
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__id
+msgid "ID"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__message_needaction
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__name
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__employment_id
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Job Position"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.act_window,name:curriculum_vitae.action_job_type
+#: model:ir.model,name:curriculum_vitae.model_job_type
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__name
+#: model:ir.ui.menu,name:curriculum_vitae.action_menu_job_type
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.job_type_view_form
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.job_type_view_tree
+msgid "Job Type"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate____last_update
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document____last_update
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment____last_update
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line____last_update
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type____last_update
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__write_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__write_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__write_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__write_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__write_uid
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_certificate__write_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__write_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment__write_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__write_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__write_date
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields.selection,name:curriculum_vitae.selection__standard_cv__gender__male
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_search
+msgid "Male"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__marital
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Marital Status"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Mark as Draft"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields.selection,name:curriculum_vitae.selection__standard_cv__marital__married
+msgid "Married"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__max_amount
+msgid "Maximum Amount"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__min_amount
+msgid "Minimum Amount"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__nrc
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "NRC"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__nationality
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Nationality"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.actions.act_window,help:curriculum_vitae.action_standard_cv_analysis
+msgid "No data for analysis!"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__period_from
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Period From"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__period_to
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Period To"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_form
+msgid "Personal Particulars"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__phone
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Phone"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_kanban
+msgid "Print PDF"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_kanban
+msgid "Print XLSX"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_document__standard_cv_id
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__standard_cv_id
+msgid "Related CV"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_job_type__cv_ids
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.job_type_view_form
+msgid "Related CVs"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__certificate_ids
+msgid "Related Certificates"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__employment_line_ids
+msgid "Related Employments"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.ui.menu,name:curriculum_vitae.first_level_menu_reporting
+msgid "Reporting"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_employment_line__responsibility
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_report_template
+msgid "Responsibility"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.job_type_view_form
+msgid "Salary Range"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields.selection,name:curriculum_vitae.selection__standard_cv__marital__single
+msgid "Single"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.act_window,name:curriculum_vitae.action_standard_cv
+#: model:ir.model,name:curriculum_vitae.model_standard_cv
+#: model:ir.ui.menu,name:curriculum_vitae.action_menu_standard_cv
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_graph
+#: model_terms:ir.ui.view,arch_db:curriculum_vitae.standard_cv_view_pivot
+msgid "Standard CV"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.report,name:curriculum_vitae.standard_cv_report_pdf
+msgid "Standard CV - PDF"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.report,name:curriculum_vitae.standard_cv_report_xlsx
+msgid "Standard CV - XLSX"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.actions.act_window,name:curriculum_vitae.action_standard_cv_analysis
+#: model:ir.ui.menu,name:curriculum_vitae.action_menu_standard_cv_analysis
+msgid "Standard CV Analysis"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__state
+msgid "Status"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,help:curriculum_vitae.field_standard_cv__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model.fields,field_description:curriculum_vitae.field_standard_cv__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:res.groups,name:curriculum_vitae.cv_group_user
+msgid "User"
+msgstr ""
+
+#. module: curriculum_vitae
+#: model:ir.model,name:curriculum_vitae.model_report_curriculum_vitae_standard_cv_report_data
+msgid "report.curriculum_vitae.standard_cv_report_data"
+msgstr ""

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="standard_cv_view_form" model="ir.ui.view">
+            <field name="name">standard.cv.form</field>
+            <field name="model">standard.cv</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                        <button type="object"
+                                name="action_draft"
+                                string="Mark as Draft"
+                                states="done" groups="curriculum_vitae.cv_group_manager"/>
+                        <button type="object"
+                                name="action_confirm"
+                                string="Confirm"
+                                class="oe_highlight"
+                                states="draft" groups="curriculum_vitae.cv_group_user"/>
+                        <button type="object"
+                                name="action_done"
+                                string="Done"
+                                class="oe_highlight"
+                                states="confirm" groups="curriculum_vitae.cv_group_manager"/>
+                    </header>
+
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button type="action"
+                                    name="%(action_employment_line)d"
+                                    class="oe_stat_button"
+                                    icon="fa-history">
+                                <field name="employment_count" widget="statinfo" string="Employments"/>
+                            </button>
+
+                            <button type="object"
+                                    name="action_open_document"
+                                    class="oe_stat_button"
+                                    icon="fa-paperclip">
+                                Documents
+                            </button>
+                        </div>
+
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name"
+                                       attrs="{'readonly': [('state', 'in', ('confirm', 'done'))]}"/>
+                            </h1>
+                            <field name="active" widget="boolean_toggle" class="oe_edit_only"/>
+                            <field name="age_info" class="oe_read_only"/>
+                            <group>
+                                <field name="apply_job"
+                                       attrs="{'readonly': [('state', '=', 'done')]}"/>
+                                <field name="salary"
+                                       widget="monetary"
+                                       options="{'currency_field': 'currency_id'}"
+                                       attrs="{'readonly': [('state', '=', 'done')]}"/>
+                                <field name="currency_id" class="oe_edit_only"
+                                       attrs="{'readonly': [('state', '=', 'done')]}"/>
+                            </group>
+                        </div>
+
+                        <group string="Personal Particulars">
+                            <group>
+                                <field name="dob"/>
+                                <field name="nrc"/>
+                                <field name="nationality"/>
+                            </group>
+                            <group>
+                                <field name="phone" widget="phone"/>
+                                <field name="email" widget="email"/>
+                                <field name="address"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="gender" widget="radio"/>
+                            <field name="marital" widget="radio" options="{'horizontal': True}"/>
+                        </group>
+                        <group string="Career Objectives">
+                            <field name="objective" nolabel="1"/>
+                        </group>
+
+                        <notebook>
+                            <page string="Education Background">
+                                <field name="certificate_ids"/>
+                            </page>
+
+                            <page string="Employment History">
+                                <field name="employment_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="employment_id"/>
+                                        <field name="company"/>
+                                        <field name="responsibility"/>
+                                        <field name="period_from" optional="show"/>
+                                        <field name="period_to" optional="show"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

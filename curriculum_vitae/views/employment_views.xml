@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="employment_view_form" model="ir.ui.view">
+            <field name="name">employment.form</field>
+            <field name="model">employment</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="company"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="employment_view_tree" model="ir.ui.view">
+            <field name="name">employment.tree</field>
+            <field name="model">employment</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="company"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="action_employment" model="ir.actions.act_window">
+            <field name="name">Employment</field>
+            <field name="res_model">employment</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new employment!
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="action_menu_employment"
+                  name="Employment"
+                  parent="group_menu_extra_info"
+                  action="action_employment"/>
+    </data>
+</odoo>

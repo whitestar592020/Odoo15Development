@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="certificate_view_form" model="ir.ui.view">
+            <field name="name">certificate.form</field>
+            <field name="model">certificate</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" string="Certificate"/>
+                            <field name="education_center" string="Education Center"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="certificate_view_tree" model="ir.ui.view">
+            <field name="name">certificate.tree</field>
+            <field name="model">certificate</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" string="Certificate"/>
+                    <field name="education_center" string="Education Center"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_certificate" model="ir.actions.act_window">
+            <field name="name">Certificate</field>
+            <field name="res_model">certificate</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new certificate!
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="group_menu_extra_info"
+                  name="Extra Info"
+                  parent="first_level_menu_configuration"/>
+
+        <menuitem id="action_menu_certificate"
+                  name="Certificate"
+                  parent="group_menu_extra_info"
+                  action="action_certificate"/>
+    </data>
+</odoo>

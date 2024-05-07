@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="standard_cv_report_template">
+            <t t-call="web.basic_layout">
+                <div class="page" style="font-family: Myanmar Text">
+                    <t t-foreach="docs" t-as="doc">
+                        <table class="table">
+                            <tr>
+                                <td style="width: 25%; text-align: center; vertical-align: middle;">
+                                    <span t-field="doc.image"
+                                          t-options="{'widget': 'image', 'style': 'height: 2in'}"/>
+                                </td>
+                                <td style="vertical-align: middle;">
+                                    <h2><span t-field="doc.name"/></h2><br/>
+                                    <h5>Apply Job : <span t-field="doc.apply_job"/></h5>
+                                    <h5>Expect Salary : <span t-field="doc.salary"
+                                                              t-options="{'widget': 'monetary'}"/></h5>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h4 style="background-color: green; color: white;">Personal Particulars</h4>
+                        <table class="table">
+                            <tr>
+                                <td style="width: 25%">Date of Birth</td>
+                                <td>: <span t-field="doc.dob"/></td>
+                            </tr>
+                            <tr>
+                                <td>NRC</td>
+                                <td>: <span t-field="doc.nrc"/></td>
+                            </tr>
+                            <tr>
+                                <td>Nationality</td>
+                                <td>: <span t-field="doc.nationality"/></td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>: <span t-field="doc.phone"/></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>: <span t-field="doc.email"/></td>
+                            </tr>
+                            <tr>
+                                <td>Current Address</td>
+                                <td>: <span t-field="doc.address"/></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>: <span t-field="doc.gender"/></td>
+                            </tr>
+                            <tr>
+                                <td>Marital Status</td>
+                                <td>: <span t-field="doc.marital"/></td>
+                            </tr>
+                        </table>
+
+                        <h4 style="background-color: green; color: white;">Career Objectives</h4>
+                        <div style="width: 100%; min-height: 100px;">
+                            <span t-field="doc.objective"/>
+                        </div>
+
+                        <h4 style="background-color: green; color: white;">Education Background</h4>
+                        <table class="table">
+                            <tr>
+                                <td>Certificate</td>
+                                <td>Education Center</td>
+                            </tr>
+                            <t t-foreach="doc.certificate_ids" t-as="line">
+                                <tr>
+                                    <td><span t-field="line.name"/></td>
+                                    <td><span t-field="line.education_center"/></td>
+                                </tr>
+                            </t>
+                        </table>
+
+                        <h4 style="background-color: green; color: white;">Employment History</h4>
+                        <table class="table">
+                            <tr>
+                                <td>Job Position</td>
+                                <td>Company</td>
+                                <td>Responsibility</td>
+                                <td>Period From</td>
+                                <td>Period To</td>
+                            </tr>
+                            <t t-foreach="doc.employment_line_ids" t-as="line">
+                                <tr>
+                                    <td><span t-field="line.employment_id"/></td>
+                                    <td><span t-field="line.company"/></td>
+                                    <td><span t-field="line.responsibility"/></td>
+                                    <td><span t-field="line.period_from"/></td>
+                                    <td><span t-field="line.period_to"/></td>
+                                </tr>
+                            </t>
+                        </table>
+                    </t>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
